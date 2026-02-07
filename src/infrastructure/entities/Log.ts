@@ -14,6 +14,6 @@ export class Log {
   @Column()
   timestamp!: string
 
-  @Column({ nullable: true })
+  @Column({ name: 'trace_id', nullable: true })
   traceId?: string
 }

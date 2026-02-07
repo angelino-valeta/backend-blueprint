@@ -14,9 +14,9 @@ export class Event {
   @Column()
   timestamp!: string;
 
-  @Column({ nullable: true })
+  @Column({ name: 'userId', nullable: true })
   userId?: number;
 
-  @Column({ nullable: true })
+  @Column({ name: 'traceId', nullable: true })
   traceId?: string;
 }

@@ -9,6 +9,7 @@
     "dev": "ts-node-dev --respawn src/index.ts",
     "typeorm": "typeorm-ts-node-commonjs",
     "migration:run": "npm run typeorm migration:run -- -d src/config/typeorm-cli.ts",
+    "seed": "ts-node src/scripts/seed.ts",
     "test": "jest --detectOpenHandles",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",

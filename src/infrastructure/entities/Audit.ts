@@ -8,7 +8,7 @@ export class Audit {
   @Column()
   action!: string;
 
-  @Column({ nullable: true })
+  @Column({ name: 'userId', nullable: true })
   userId?: number;
 
   @Column('jsonb')
@@ -17,6 +17,6 @@ export class Audit {
   @Column()
   timestamp!: string;
 
-  @Column({ nullable: true })
+  @Column({ name: 'traceId', nullable: true })
   traceId?: string;
 }
